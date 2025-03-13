@@ -1,0 +1,131 @@
+header {
+    color: rgb(68, 211, 222);
+}
+
+body {
+    background-color: rgb(49, 64, 117);
+    color: rgb(239, 228, 205);
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: arial;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: chicle;
+    font-weight: bold;
+    font-size: 4em;
+    margin-bottom: 1.5em;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.lastenkommentit {
+    font-style: oblique;
+    color: rgb(226, 43, 223);
+}
+
+a {
+    color: rgb(0, 0, 0);
+}
+
+
+/* NAVIGOINTI */
+#topnav a {
+    text-decoration: none;
+    color: rgb(251, 251, 251);
+}
+
+#topnav li {
+    display: inline-block;
+    padding: 1%;
+}
+
+/* NAVIGOINTI LOPPUU */
+
+.korostus {
+    font-weight: bold;
+}
+
+/*Mobiili säädöt*/
+@media only screen and (max-width:440px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        /* Header menee pystysuunnassa */
+    }
+
+    #topnav {
+        order: -1;
+        /* Varmistaa, että navigointi menee ylimmäksi */
+        width: 100%;
+        /* Varmistaa, että navigointi vie koko leveyden */
+        text-align: center;
+        /* Varmistaa, että linkit ovat keskitettyjä */
+        font-size: 2em;
+    }
+
+    body {
+        font-size: 14px;
+        background-image: url(Kuvat/logotaustapoistettu.PNG);
+    }
+
+    #topnav li {
+        display: block;
+        text-align: left;
+    }
+
+    #topnav a {
+        font-size: 1em;
+        text-decoration: underline;
+    }
+
+}
+
+/*Isommat mobiili säädöt*/
+@media only screen and (min-width:441px) {
+
+    #topnav a {
+        font-size: 1em;
+        text-decoration: underline;
+    }
+
+    .flex_container {
+        display: flex;
+    }
+
+    .flex_item {
+        flex: 1
+    }
+
+    body {
+        font-size: 16px;
+        background-image: url(Kuvat/logotaustapoistettu.PNG);
+    }
+}
+
+/*Ison näytön säädöt*/
+@media only screen and (min-width:1200px) {
+
+
+    body {
+        font-size: 20px;
+        width: 1200px;
+        margin: auto;
+        padding: 0 10px 0 10px;
+        background-image: url(Kuvat/logotaustapoistettu.PNG);
+    }
+
+
+}
