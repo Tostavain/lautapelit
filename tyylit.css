@@ -35,15 +35,16 @@ h2 {
 h3 {
     color: rgb(68, 211, 222);
     font-weight: bold;
+    font-size: 1em;
 }
 
 .lastenkommentit {
     font-style: oblique;
-    color:antiquewhite;
+    color: rgb(255, 255, 0);
 }
 
 a {
-    color:antiquewhite;
+    color: rgb(255, 255, 0);
 }
 
 
